@@ -63,4 +63,17 @@ public class Contenedor {
         else s += "No esta inspeccionado\n";
         return s;
     }
+
+    public String toString(int id, String emisor, int peso, boolean inspeccionado){
+        String s = new String();
+        s += "ID: " + this.id + "\n";
+        s+= "Emisor: " + this.emisor + "\n";
+        s+= "Peso: " + this.peso + "\n";
+        if (inspeccionado) s += "Esta inspeccionado\n";
+        else s += "No esta inspeccionado\n";
+        return s;
+
+
+
+    }
 }
